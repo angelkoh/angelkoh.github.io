@@ -86,3 +86,21 @@ background: transparent;
 border: 2px solid #f9004d;
 cursor:pointer;
 }
+
+
+/*links*/
+a:link {
+  color: lightblue;
+}
+a:visited {
+  color: pink;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -53,7 +53,23 @@ font-size:25px;
 text-transform:capitalize;
 margin-bottom: 20px;
 }
-
 span{
 color: #f9004d
+}
+
+/*links*/
+a:link {
+  color: lightblue;
+}
+a:visited {
+  color: pink;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
