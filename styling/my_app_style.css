@@ -1,0 +1,59 @@
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.android{
+width: 100%;
+padding: 70px  30px 50px  30px ;
+background-color: #191919;
+}
+.android h1{
+color: white;
+font-size:50px;
+text-transform:capitalize;
+}
+
+.android h5{
+color: white;
+font-size:25px;
+text-transform:capitalize;
+margin-bottom:25px;
+letter-spacing:2px;
+}
+.android {
+color: lightgrey;
+letter-spacing: 1px;
+line-height: 28px;
+font-size:18px;
+margin-bottom:45px;
+}
+
+.download {
+padding: 20px;
+align: center;
+}
+.download img{
+width: 160px;
+height: auto;
+}
+/*LOOKUP GAMES*/
+.split_image {
+display:flex;
+align-items: center;
+}
+.download_link {
+padding: 20px;
+}
+
+.text h4{
+color: gold;
+font-size:25px;
+text-transform:capitalize;
+margin-bottom: 20px;
+}
+
+span{
+color: #f9004d
+}
