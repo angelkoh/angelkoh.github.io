@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth Callback</title>
+</head>
+<body>
+<p>Redirecting to app…</p>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const state = params.get('state');
+    const error = params.get('error');
+
+    // Construct URL to redirect to the app
+    let appUrl = `angelminiature://callback?`;
+
+    if (code) {
+      appUrl += `code=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`;
+    } else if (error) {
+      appUrl += `error=${encodeURIComponent(error)}&state=${encodeURIComponent(state)}`;
+    } else {
+      appUrl += `error=no_code_received`;
+    }
+
+    // Redirect to app
+    window.location.href = appUrl;
+
+</script>
+</body>
+</html>
